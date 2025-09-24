@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Data types</h2>
+
+<script>
+
+
+function generateGameResults(userScoreString) {
+
+  let mysteryLevel = Math.floor(Math.random() * 50) + 1;
+
+  let userScore = Number(userScoreString);
+
+  let absoluteDifference = Math.abs(mysteryLevel - userScore);
+  console.log(`The mystery level is: ${mysteryLevel}`);
+  console.log(`Your score is: ${userScore}`);
+  console.log(`The absolute difference between your score and the mystery level is: ${absoluteDifference}`);
+
+  let scoreSquareRoot = Math.sqrt(userScore);
+  console.log(`The square root of your score is: ${scoreSquareRoot}`);
+
+  console.log(`The value of Pi is: ${Math.PI}`);
+
+  let implicitConversionResult = "20" * 5;
+  console.log(`The result of "20" * 5 using implicit conversion is: ${implicitConversionResult}`);
+
+  let maxNumber = Math.max(10, 20, mysteryLevel);
+  let minNumber = Math.min(10, 20, mysteryLevel);
+  console.log(`The highest value among 10, 20, and the mystery level is: ${maxNumber}`);
+  console.log(`The lowest value among 10, 20, and the mystery level is: ${minNumber}`);
+}
+generateGameResults("45");
+
+</script>
+
+</body>
+</html>
