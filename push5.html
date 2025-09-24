@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Item Return Page</title>
+</head>
+<body>
+
+  <button id="checkReturn">Check Return Eligibility</button>
+  <p id="tracks"></p>
+
+  <script>
+    document.getElementById("checkReturn").addEventListener("click", function() {
+
+     var order = {
+        itemName: "Wireless Mouse",
+        isDelivered: true,
+        daysSinceDelivery: 8
+      };
+
+      var message = (order.isDelivered && order.daysSinceDelivery <= 7)
+        ? "Eligible for Return"
+        : "Return Period Expired";
+
+      document.getElementById("tracks").textContent = message;
+
+
+      console.log(order);
+    });
+  </script>
+
+</body>
+</html>
