@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+    
+function generateStatistics(userScoreString) {
+
+  let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+  let userScore = Number(userScoreString);
+ 
+  let difference = randomNumber - userScore;
+  console.log(`The random number is: ${randomNumber}`);
+  console.log(`The user's score is: ${userScore}`);
+  console.log(`The difference is: ${difference}`);
+
+  let scoreSquareRoot = Math.sqrt(userScore);
+  let roundedSquareRoot = Math.round(scoreSquareRoot);
+  console.log(`The square root of the user's score is: ${scoreSquareRoot}`);
+  console.log(`The rounded square root is: ${roundedSquareRoot}`);
+
+  console.log(`The value of Pi is: ${Math.PI}`);
+
+  let implicitConversionResult = "50" * 2;
+  console.log(`The result of "50" * 2 using implicit conversion is: ${implicitConversionResult}`);
+}
+
+generateStatistics("75");
+    </script>
+</body>
+</html>
